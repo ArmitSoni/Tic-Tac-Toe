@@ -1,0 +1,81 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #548687;
+    text-align: center;
+}
+
+.container{   /* container m ye propety lgane s, ab page k center m dikhegi*/
+    height: 70vh;  /* jitna bhi hmara page hoga uska 70% container k pass hoga */
+    display: flex;      /* ek line m aa jayenga sb */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+ .Game{
+    height: 60vmin;
+    width: 60vmin ;
+    display: flex;      /* ek line m aa jayenga sb */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+
+}
+  
+.box{  /* hr ek box ko individual border deni h like border radius*/
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+    cursor: pointer;
+} 
+
+#reset-btn{
+    padding : 16px; /*1rem =16px */
+    border-radius: 16px;
+    border: none;
+    font-size: 20px; /*20px = 1.25rem */
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 1rem;
+}
+
+#new-btn{
+     padding : 16px; /*1rem =16px */
+    border-radius: 16px;
+    border: none;
+    font-size: 20px; /*20px = 1.25rem */
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+}
+#reset-btn:hover,
+#new-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.4);
+}
+#msg{
+  color: #ffffc7; ;
+  font-size: 40px;
+}
+.msg-container{
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide{
+    display: none;
+}
